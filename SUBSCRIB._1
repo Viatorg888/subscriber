@@ -1,0 +1,90 @@
+Пример кода письма с разметкой под текст и фото в последовательности как шахматная доска на 9 клеток можно написать, используя HTML и CSS. Ниже приведен пример кода, который создает таблицу с 3 строками и 3 столбцами, в каждой из которых размещается фотография и текст.
+
+html
+Copy 
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Письмо с разметкой шахматной доски</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    td {
+      width: 33.33%;
+      padding: 10px;
+      vertical-align: top;
+      text-align: center;
+      border: 1px solid #ccc;
+    }
+    .white {
+      background-color: #f9f9f9;
+    }
+    .black {
+      background-color: #444;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    p {
+      color: #333;
+      font-size: 16px;
+      line-height: 1.5;
+      margin: 10px 0 0;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <tr>
+      <td class="white">
+        <img src="image1.jpg" alt="Фотография 1">
+        <p>Текст 1</p>
+      </td>
+      <td class="black">
+        <img src="image2.jpg" alt="Фотография 2">
+        <p>Текст 2</p>
+      </td>
+      <td class="white">
+        <img src="image3.jpg" alt="Фотография 3">
+        <p>Текст 3</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="black">
+        <img src="image4.jpg" alt="Фотография 4">
+        <p>Текст 4</p>
+      </td>
+      <td class="white">
+        <img src="image5.jpg" alt="Фотография 5">
+        <p>Текст 5</p>
+      </td>
+      <td class="black">
+        <img src="image6.jpg" alt="Фотография 6">
+        <p>Текст 6</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="white">
+        <img src="image7.jpg" alt="Фотография 7">
+        <p>Текст 7</p>
+      </td>
+      <td class="black">
+        <img src="image8.jpg" alt="Фотография 8">
+        <p>Текст 8</p>
+      </td>
+      <td class="white">
+        <img src="image9.jpg" alt="Фотография 9">
+        <p>Текст 9</p>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
+
+
+
